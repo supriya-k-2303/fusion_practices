@@ -1,0 +1,32 @@
+@'
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Azure Functions local settings
+local.settings.json
+
+# Environment / secrets
+.env
+.env.*
+
+# VS Code
+.vscode/
+
+# Azurite local storage
+__blobstorage__/
+__queuestorage__/
+__azurite_db_*.json
+AzuriteConfig
+
+# Test/cache files
+.pytest_cache/
+.coverage
+
+# Build/package files
+*.zip
+dist/
+build/
+'@ | Set-Content .gitignore
